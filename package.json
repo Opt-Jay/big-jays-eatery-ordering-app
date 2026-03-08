@@ -1,0 +1,15 @@
+{
+  "name": "big-jays-eatery-ordering-app",
+  "version": "1.0.0",
+  "description": "Mobile-style restaurant ordering app built with JavaScript featuring dynamic menu rendering and meal deal discounts.",
+  "author": "Justice Oppong-Tuah",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}

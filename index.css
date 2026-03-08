@@ -1,0 +1,182 @@
+:root {
+    --bg: #fdf6ee;
+    --card-bg: #fffaf5;
+    --text: #3b2618;
+    --muted: #8a6a58;
+    --accent: #c96a2b;
+    --accent-hover: #ad5720;
+    --border: #ead9ca;
+    --hero-overlay: rgba(60, 30, 10, 0.35);
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+#app {
+    width: 600px;
+    min-height: 1161px;
+    margin: 0 auto;
+    background: var(--card-bg);
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    min-height: 100vh;
+}
+
+.hero {
+    background-image: linear-gradient(
+        var(--hero-overlay),
+        var(--hero-overlay)
+    ),
+    url("./images/big-jay.png");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+main {
+    padding: 0px 46px 0px 46px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0 30px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.menu-left {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.emoji {
+    font-size: 50px;
+}
+
+.add-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    border: 1px solid var(--border);
+    background: var(--card-bg);
+    color: var(--text);
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.order-wrapper {
+    margin-top: 45px;
+}
+
+.order-wrapper h2 {
+    text-align: center;
+}
+
+.order-item,
+.total-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total-row {
+    border-top: 2px solid #393333;
+    padding-top: 14px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.remove-btn {
+    border: none;
+    background: none;
+    color: var(--muted);
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+#complete-order-btn{
+    width: 100%;
+    margin-top: 40px;
+    padding: 18px;
+    border: none;
+    background: var(--accent);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.modal-inner button {
+    margin-top: 18px;
+    padding: 18px;
+    border: none;
+    background: var(--accent);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal-inner {
+    width: 508px 140px;
+    background: white;
+    padding: 35px 24px;
+    border-radius: 4px;
+}
+
+.modal-inner form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.modal-inner input {
+    padding: 18px 12px;
+    font-size: 16px;
+}
+
+.success-message {
+    margin-top: 45px;
+    background: #ecfdf5;
+    color: #065f46;
+    text-align: center;
+    padding: 22px;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+.deal-msg {
+    color: var(--accent);
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+#complete-order-btn:hover,
+.modal-inner button:hover {
+    background: var(--accent-hover);
+}
