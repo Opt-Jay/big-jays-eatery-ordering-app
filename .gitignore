@@ -134,6 +134,13 @@ dist
 !.yarn/sdks
 !.yarn/versions
 
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
