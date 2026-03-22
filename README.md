@@ -76,5 +76,8 @@ My goal is to build real-world projects while improving my skills in JavaScript,
 
 ⸻
 
+## Live Demo
+[View Live Site](https://opt-jay.github.io/big-jays-eatery-ordering-app/)
+
 ✨ Author
 Justice Oppong-Tuah
